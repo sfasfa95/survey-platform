@@ -278,7 +278,13 @@ export default function Home() {
             onClick={() => handleSubmit()}
           >
             {isLoading && (
-              <CircularProgress size={24} className="text-white text-sm mr-2" />
+              <CircularProgress
+                sx={{
+                  color: "#ffffff",
+                }}
+                size={24}
+                className=" text-sm mr-2"
+              />
             )}
             <span className="text-white">SUBMIT</span>
           </button>
