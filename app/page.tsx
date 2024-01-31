@@ -166,7 +166,7 @@ export default function Home() {
             </h2>
             <p className="text-sm">
               Please rate based on your level of satisfaction. On a scale of
-              1-10, 1 means "dissatisfied" and 10 means "very satisfied"
+              1-10, 1 means &quot dissatisfied &quot  and 10 means &quot very satisfied &quot
             </p>
           </div>
           <div className="mt-10">
