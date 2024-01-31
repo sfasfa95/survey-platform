@@ -166,7 +166,8 @@ export default function Home() {
             </h2>
             <p className="text-sm">
               Please rate based on your level of satisfaction. On a scale of
-              1-10, 1 means &quot dissatisfied &quot  and 10 means &quot very satisfied &quot
+              1-10, 1 means <q>dissatisfied</q> and 10 means{" "}
+              <q>very satisfied</q>
             </p>
           </div>
           <div className="mt-10">
@@ -270,18 +271,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-8 text-center">
-          <Button
+        <section className="mt-8 flex justify-center">
+          <button
             disabled={isLoading}
-            variant="outlined"
-            className="text-lg min-w-60 bg-[#ffc915] hover:bg-[#ffc915] text-white border-white hover:border-[#ffc915]"
+            className="text-lg w-full md:w-60 bg-[#ffc915] hover:bg-[#ffc915] text-white border-white hover:border-[#ffc915] flex items-center rounded h-10 justify-center"
             onClick={() => handleSubmit()}
           >
             {isLoading && (
               <CircularProgress size={24} className="text-white text-sm mr-2" />
             )}
-            <span className="text-white">Submit</span>
-          </Button>
+            <span className="text-white">SUBMIT</span>
+          </button>
         </section>
       </div>
     </>
